@@ -1,0 +1,376 @@
+/* ===========================================
+   Machine Summary Cards
+=========================================== */
+
+.machine-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.machine-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.machine-card:hover{
+  transform: translateY(-6px);
+}
+
+.machine-icon{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.machine-icon.blue{color:#1565C0;}
+.machine-icon.green{color:#2E7D32;}
+.machine-icon.orange{color:#FB8C00;}
+.machine-icon.red{color:#D32F2F;}
+
+.machine-card h2{
+  font-size:32px;
+  color:#16213E;
+  margin:10px 0;
+}
+
+.machine-card span{
+  color:#666;
+  font-size:15px;
+}
+
+
+/* ===========================================
+   Pie Chart + Status
+=========================================== */
+
+.machine-grid{
+
+  display:grid;
+
+  grid-template-columns:420px 1fr;
+
+  gap:25px;
+
+  margin-bottom:30px;
+
+  align-items:start;
+
+}
+
+
+/* ===========================================
+   Pie Card
+=========================================== */
+
+.pie-card{
+
+  background:#fff;
+
+  border-radius:15px;
+
+  padding:25px;
+
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+  text-align:center;
+
+}
+
+.pie-card h3{
+
+  margin-bottom:25px;
+
+  color:#16213E;
+
+}
+
+
+/* ===========================================
+   Status Card
+=========================================== */
+
+.status-card{
+
+  background:#fff;
+
+  border-radius:15px;
+
+  padding:25px;
+
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.status-card h3{
+
+  margin-bottom:25px;
+
+  color:#16213E;
+
+}
+
+
+/* ===========================================
+   Status Grid
+=========================================== */
+
+.status-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(2,1fr);
+
+  gap:20px;
+
+}
+
+
+/* ===========================================
+   Status Box
+=========================================== */
+
+.status-box{
+
+  min-height:120px;
+
+  border-radius:14px;
+
+  padding:20px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+  transition:.3s;
+
+  color:#fff;
+
+}
+
+.status-box:hover{
+
+  transform:translateY(-5px);
+
+}
+
+.status-box span{
+
+  color:#fff;
+
+  font-size:22px;
+
+  font-weight:700;
+
+  margin-bottom:12px;
+
+}
+
+.status-box strong{
+
+  font-size:18px;
+
+}
+
+.healthy{
+
+  background:#43A047;
+
+}
+
+.warning{
+
+  background:#FB8C00;
+
+}
+
+.critical{
+
+  background:#D32F2F;
+
+}
+
+
+/* ===========================================
+   Machine Table
+=========================================== */
+
+.machine-table-card{
+
+  background:#fff;
+
+  border-radius:15px;
+
+  padding:25px;
+
+  margin-bottom:30px;
+
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.machine-table-card h3{
+
+  margin-bottom:20px;
+
+  color:#16213E;
+
+}
+
+.machine-table-card table{
+
+  width:100%;
+
+  border-collapse:collapse;
+
+}
+
+.machine-table-card thead{
+
+  background:#1565C0;
+
+  color:#fff;
+
+}
+
+.machine-table-card th{
+
+  padding:16px;
+
+  text-align:left;
+
+}
+
+.machine-table-card td{
+
+  padding:15px;
+
+  border-bottom:1px solid #ECECEC;
+
+}
+
+.machine-table-card tbody tr:hover{
+
+  background:#F3F8FF;
+
+}
+
+.machine-table-card svg{
+
+  color:#EF6C00;
+
+}
+
+
+/* ===========================================
+   Maintenance
+=========================================== */
+
+.maintenance-card{
+
+  background:#fff;
+
+  border-radius:15px;
+
+  padding:25px;
+
+  box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.maintenance-card h3{
+
+  margin-bottom:20px;
+
+  color:#16213E;
+
+}
+
+.maintenance-item{
+
+  border-left:5px solid #1565C0;
+
+  padding-left:20px;
+
+  margin-bottom:22px;
+
+}
+
+.maintenance-item h4{
+
+  margin-bottom:6px;
+
+  color:#16213E;
+
+}
+
+.maintenance-item p{
+
+  color:#666;
+
+  margin-bottom:6px;
+
+}
+
+.maintenance-item span{
+
+  color:#1565C0;
+
+  font-weight:bold;
+
+}
+
+
+/* ===========================================
+   Responsive
+=========================================== */
+
+@media(max-width:1100px){
+
+.machine-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.status-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.machine-summary{
+
+grid-template-columns:1fr;
+
+}
+
+.status-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.machine-table-card{
+
+overflow-x:auto;
+
+}
+
+.machine-table-card table{
+
+min-width:650px;
+
+}
+
+}
